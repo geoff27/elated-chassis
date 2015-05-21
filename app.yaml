@@ -1,0 +1,13 @@
+application: elated-chassis-558
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+
+handlers:
+- url: /_ah/mail/.+
+  script: main.app
+
+inbound_services:
+- mail
